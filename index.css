@@ -1,0 +1,33 @@
+#agregarCandidatos {
+    display: flex;
+    flex-direction: column;
+    width: 24em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+#agregarCandidatos * {
+width:100%;
+margin: 10px 16px 5px 16px;
+
+}
+#title {
+    text-align: center;
+
+}
+#subtitle {
+text-align: center;
+}
+
+#btnVer {
+  position: absolute;
+    left: 700px;
+    top: 50px;
+  justify-content: right;
+  align-items: right;
+  flex-direction:column;
+  display: flex;
+  width: 10em;
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> s10 </title>
+    <link rel = "stylesheet" href = "index.css">
+</head>
+<body>
+
+    
+    <div id = "agregarCandidatos">
+       <h1 id = "title"> Lapsus Napoleon Franco </h1>
+<h3 id = "subtitle"> Registre el candidato para la encuesta </h3>
+<input id="IDS" placeholder ="ID "type="text">
+<input id="Nombre"  placeholder =" Nombre " type ="text">
+<button id = "bregistrar"> Registrar </button> 
+<h3 id = "subtitle"> Vota por el candidato usando su ID </h3>
+<input id="idd"  placeholder =" ID " type ="text">
+<button id = "bvotar"> Votar </button> 
+    </div>
+
+    <div id = "btnVer">
+        <button id = "bverCandidatosr"> Ver candidatos </button> 
+        <button id = "bverVotaciones"> Ver votaciones </button> 
+    </div>
+
+</body>
+
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+<script>
+   
+    var firebaseConfig = {
+
+      apiKey: "AIzaSyDAtvbKucE-k2wSWtqo8qv33ZdWNbsFzzg",
+      authDomain: "semana10-7752c.firebaseapp.com",
+      databaseURL: "https://semana10-7752c.firebaseio.com",
+      projectId: "semana10-7752c",
+      storageBucket: "semana10-7752c.appspot.com",
+      messagingSenderId: "878278971313",
+      appId: "1:878278971313:web:5741beefe0048edd25f790",
+      measurementId: "G-K7LX3Y62YB"
+
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+<script src="index.js" ></script>
