@@ -41,9 +41,28 @@ database.ref('Candidatos').push().set(objUsuario);
 
 bregistrar.addEventListener('click',registrar);
 
+verCandidatos = ()=>{
+   json = JSON.stringify(listCandi);
+   alert(json);
+}
 
-database.ref('Candidatos').on('value',function(data){
-   console.log(data.val());
-})
-//bverCandidatosr.addEventListener('click',+data);
+
+bverCandidatosr.addEventListener('click',verCandidatos);
+
+database.ref('Candidatos').on('value',
+function(data){
+   
+
+      var arraycandidatos = [];
+      data.forEach(
+         candi=>{
+            arraycandidatos.push(candi.val());
+         listCandi = arraycandidatos;
+         }
+      )
+        
+      }
+
+   );
+   
 
